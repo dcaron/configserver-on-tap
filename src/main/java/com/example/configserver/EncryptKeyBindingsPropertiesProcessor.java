@@ -28,8 +28,8 @@ public class EncryptKeyBindingsPropertiesProcessor implements BindingsProperties
 
         // use MapMapper from spring cloud someday? 
         // https://github.com/spring-cloud/spring-cloud-bindings/blob/main/src/main/java/org/springframework/cloud/bindings/boot/ConfigServerBindingsPropertiesProcessor.java#L43
-        Map<String, String> secret = myBindings.get(0).getSecret();
-        properties.put("encrypt.key", secret.get("key"));
+//        Map<String, String> secret = myBindings.get(0).getSecret();
+//        properties.put("encrypt.key", secret.get("key"));
         
         log.info("Mapped encrypt.key from binding");
     }

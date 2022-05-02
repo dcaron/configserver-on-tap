@@ -5,13 +5,13 @@ metadata:
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: configserver
-    networking.knative.dev/visibility: cluster-local
+#    networking.knative.dev/visibility: cluster-local
   annotations:
     autoscaling.knative.dev/minScale: "0"
 spec:
   source:
     git:
-      url: https://github.com/xyloman/configserver-on-tap.git
+      url: https://github.com/dcaron/configserver-on-tap.git
       ref:
         branch: main
   build:
